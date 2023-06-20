@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace bookWPF.View
+namespace WPF_LoginForm.Views
 {
     /// <summary>
-    /// LoginView.xaml에 대한 상호 작용 논리
+    /// Interaction logic for LoginView.xaml
     /// </summary>
     public partial class LoginView : Window
     {
@@ -24,7 +24,7 @@ namespace bookWPF.View
             InitializeComponent();
         }
 
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e) // 마우스 왼쪽 클릭시에 창 움직이게 하기
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
@@ -40,10 +40,6 @@ namespace bookWPF.View
             Application.Current.Shutdown();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            return;
-        }
-
+        private void btnLogin_Click(object sender, RoutedEventArgs e) { }
     }
 }
